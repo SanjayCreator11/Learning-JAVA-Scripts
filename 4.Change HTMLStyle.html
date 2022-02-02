@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!---Control + Alt ++ K can be used for Color Picker Tool-->
+<html>
+    
+ <head>
+     
+ <meta charset ="utf-8">
+     
+ <title>Alert !</title>
+     
+<style>
+    .RedBox{background-color: gray;
+        color: white;
+        height : 40px;
+        width: auto;
+        padding: 40px;}
+    .SearchBox{background-color: silver;
+        color: white;
+        height : 40px;
+        width: auto;
+        padding: 40px;}
+    .SilverBox{background-color: blue;
+        color: white;
+        height : 40px;
+        width: auto;
+        padding: 40px;}
+    .ColorBox{background-color: red;
+        color: white;
+        height : 40px;
+        width: auto;
+        padding: 40px;}
+        
+        
+    }
+    
+    
+   
+</style>
+     
+     
+     
+ </head>
+ 
+ <body>
+     
+     <div class = "RedBox" id="Apple">
+         
+         <p> <span class = "Number1">Apple</span></p>
+         
+     </div>
+         
+     <div class = "SilverBox" id="Samsung">
+         
+         <p>Samsung</p>
+         
+     </div>     
+     
+     <div class = "SearchBox">
+     
+         <p>Asus</p>
+         
+    </div>
+     
+    <div class = "ColorBox">
+        
+         <p>Microsoft</p>
+     
+     </div>
+     
+     <button id="button1">Change Apple Style</button>
+     <button id="button2">Change Samsung Style</button>
+     <script>
+     document.getElementById("button1").onclick=function(){
+         document.getElementById("Apple").style.width="200px";
+         document.getElementById("Apple").style.backgroundColor="Green";
+     }
+     document.getElementById("button2").ondblclick=function(){
+         document.getElementById("Samsung").innerHTML= "<h1>Samsung</h1>"
+     }
+     </script>
+     
+ </body>
+ 
+ 
+</html>
